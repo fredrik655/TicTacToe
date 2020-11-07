@@ -83,9 +83,6 @@ const gameBoard = (() => {
         else {
             displayController.updateWinnerText('AI Won!!');
         }
-        
-        // ask if play again
-        // if play again startGame()
     };
 
     const startGame = () => {
@@ -105,7 +102,6 @@ const gameBoard = (() => {
             numbPlayers = 2;
             displayController.updateWinnerText('Player 1 vs Player 2');
         }
-        console.table(players);
         displayController.enableAndDisableSquareBtns(true);
         // make players
     }
@@ -195,9 +191,7 @@ const displayController = (() => {
         difficultyBtns.forEach(element => {
             element.classList.remove('difficulty-none-select');
             element.classList.add('difficulty');
-
             element.addEventListener('click', e => {
-                console.log(typeof(e.target.getAttribute('data-selected')));
                 if(e.target.id === 'easy' && e.target.getAttribute('data-selected') === '2'){
                     difficultyBtns.forEach(el => {
                         (el.id === 'easy') ? el.setAttribute('data-selected', '1') : el.setAttribute('data-selected', '2');
@@ -293,12 +287,14 @@ const displayController = (() => {
 
     const clearBoard = () => {
         listOfGameSquares.forEach(element => {
+            element.style.background = 'none';
             element.style.backgroundColor = 'white';
         });
     }
     const updateSquare = (mark, index) => {
         if(index >= 0 && index < 9){
-            listOfGameSquares[index].style.backgroundColor = (mark === 'X') ? 'black' : 'green';
+            listOfGameSquares[index].style.background = (mark === 'X') ? 'url("images/x.png")' : 'url("images/o.jpg")';
+            listOfGameSquares[index].style.backgroundSize = 'contain';
         }  
     };
 
