@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+    </head>
+    <body>
+        <section class="interface">
+            <section class="input-box">
+                <input type="radio" name="numb-players" id="one-player" value="1">
+                <label for="one-player">One player</label>
+            </section>
+
+            <section class="input-box">
+                <input type="radio" name="numb-players" id="two-player" value="2">
+                <label for="two-player">Two players</label>
+                
+            </section>
+            <button class="difficulty" id="easy" data-selected="1">easy</button>
+            <button class="difficulty" id="hard" data-selected="2">hard</button>
+            
+            <button class="start-btn"> Start / Restart</button>
+
+            <div class="winner-text">
+                <p>Start Game</p>
+            </div>
+        </section>
+        <section class="board-sec">
+            <div class="board-square" id="0">
+                <button class="square-btn" data-value='0'></button>
+            </div>
+            <div class="board-square" id="1">
+                <button class="square-btn" data-value='1'></button>
+            </div>
+            <div class="board-square" id="2">
+                <button class="square-btn" data-value='2'></button>
+            </div>
+            <div class="board-square" id="3">
+                <button class="square-btn" data-value='3'></button>
+            </div>
+            <div class="board-square" id="4">
+                <button class="square-btn" data-value='4'></button>
+            </div>
+            <div class="board-square" id="5">
+                <button class="square-btn" data-value='5'></button>
+            </div>
+            <div class="board-square" id="6">
+                <button class="square-btn" data-value='6'></button>
+            </div>
+            <div class="board-square" id="7">
+                <button class="square-btn" data-value='7'></button>
+            </div>
+            <div class="board-square" id="8">
+                <button class="square-btn" data-value='8'></button>
+            </div>
+        </section>
+    </body>
+
+    <script type="text/javascript" src="main.js"></script>
+</html>

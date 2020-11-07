@@ -1,0 +1,105 @@
+
+
+.board-sec {
+    background-color: brown;
+    width: 600px;
+    height: 600px;
+
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -300px;
+
+    top: 50%;
+    left: 50%;
+
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+}
+
+.board-square {
+    background-color: white;
+    border: 3px solid#1e7665;
+    justify-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.square-btn {
+    background-color: blueviolet;
+    opacity: 0%;
+    border: none;
+    width: 100%;
+    height: 100%;
+    pointer-events: all;
+}
+
+
+.interface {
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    margin-top: -100px;
+    margin-left: -250px;
+    left: 50%;
+    top: 15%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-box {
+    width: 200px;
+    height: 75px;
+    border: 1px solid #2eb398;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.interface>input {
+    cursor: pointer;
+}
+
+.interface>label {
+    cursor: pointer;
+}
+
+.interface>button {
+    width: 200px;
+    height: 100%;
+    margin-bottom: 5px;
+    border: 1px solid #2eb398;
+    font-family: monospace;
+}
+
+.interface>button:hover {
+    background-color: #2eb398;
+    border: 1px solid #1e7665;
+}
+
+.winner-text {
+    border-bottom: 1px solid #2eb398;
+    width: 100%;
+    font-family: monospace;
+    font-size: 20px;
+}
+
+.input-box-selected {
+    background-color: #2eb398;
+    width: 200px;
+    height: 75px;
+    border: 1px solid #1e7665;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.difficulty-none-select {
+    opacity: 50%;
+}
+
+.difficulty-none-select:hover {
+    pointer-events: none;
+}
